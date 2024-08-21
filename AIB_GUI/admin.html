@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page | User Management</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+
+<div class="home">
+
+    <div class="navbar">
+        <ul>
+            <li data-i18="home" class="hh"><a href="index.html">Home</a></li>
+            <li data-i18="report" ><a href="Report.html">Report</a></li>
+            <li data-i18="admin" class="active"><a href="Admin.html">Admin</a></li>
+        </ul>
+       
+
+        <div class="search-container">
+            <input type="text" name="search" placeholder="Search by Username" class="search-input">
+            <a href="#" class="search-btn">
+                    <i class="fas fa-search"></i>      
+            </a>
+        </div>
+
+
+        <img class="logo" src="images/AIB Logo FF-03.png" alt="AIB Logo">
+    </div>
+
+    <div class="content">
+        <h1 data-i18="title" class="greeting">Admin User Management</h1>
+
+        <div class="profile_icon">
+            <i id="icon" class="fa-solid fa-user fa-2xl" style="color: #cea618;"></i>
+        </div>  
+
+        <div class="profile_list">
+
+
+        
+                
+            
+
+
+
+            <div class="close">
+                <div class="inner">
+                  <label class="labclose">Close</label>
+                </div>
+              </div>
+            <img class="profile2" src="images/profile.png" alt="Profile Image">
+            <div class="photo1">
+                <h2 class="name" data-i18="name" >Name</h2>
+                <h4 class="role" data-i18="role" >Role: Admin</h4>
+            </div>
+            <ul>
+                <div class="edit">
+                    <li data-i18="edit" ><a href="Edit.html"><span id="edit">Edit Account</span></a></li>
+                </div>
+                <li data-i18="logout"><a class="logout" href="index.html" id="logout">Logout</a></li>
+            </ul>
+        </div>
+
+        <div class="admin-controls">
+            <button data-i18="add" class="button2" onclick="openUserForm()">Add New User</button>
+
+            <button data-i18="download" class="download" onclick="downloadCSV()">Download</button>
+
+        </div>
+
+
+        <div class="profile_card">  
+        <div class="user-list">
+            <table id="userTable">
+                <thead>
+                    <tr>
+                        <th data-i18="id">ID</th>
+                        <th data-i18="name">Name</th>
+                        <th data-i18="email">Email</th>
+                        <th data-i18="role">Role</th>
+                        <th data-i18="actions">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- User rows will be added here dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+
+    <div class="user-form-container" id="userFormContainer" style="display: none;">
+        <div class="user-form">
+            <h2 data-i18="add" id="formTitle">Add New User</h2>
+            <form id="userForm">
+                <input type="hidden" id="userId" name="userId"> <br>
+                <label for="name">Name:</label> <br>
+                <input type="text" id="name" name="name" required> <br>
+                <label for="email">Email:</label> <br>
+                <input type="email" id="email" name="email" required> <br>
+                <label for="role">Role:</label> <br>
+                <select class="rolesel" id="role" name="role" required>
+                    <option value="User">User</option>
+                    <option value="Admin">Admin</option>
+                </select> <br>
+                <button type="submit">Save</button>
+                <button type="button" onclick="closeUserForm()">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+    <script src="admin.js"></script>
+</body>
+</html>

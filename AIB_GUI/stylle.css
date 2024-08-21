@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.logo{
+    position: absolute;
+    right: 70%;
+    bottom: 90%;
+
+}
+
+.navbar{
+    background-color: black;
+    color: white;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    display: inline-block;
+    position: relative;
+    margin-right:150px;
+    font-size: 25px;
+    font-weight: 600;
+    
+}
+
+select{
+    left: 80.8%;
+top: 8%;
+    position: absolute;
+    width: 85px;
+    background: transparent;
+    width: 100px;
+    height: 20px;
+    color: white;
+    border: none;
+}
+
+.ll{
+    color: rgb(246, 244, 244);
+}
+
+.navbar .home{
+    margin-left: 600px;
+}
+
+
+.ll:hover{
+    color: rgb(203, 160, 16);
+    transform: scale(1.04);
+    transition: 0.5s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.Signup {
+    bottom: 9px;
+    width:100px;
+    height: 32px;
+    text-align: center;
+border-radius: 20px;
+right: 74%;
+  appearance: none;
+  background-color:rgb(255, 255, 255) ;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson,Helvetica,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.Signup:before {
+    border-radius: 20px;
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #baa419;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+  color: #000000;
+}
+
+.Signup:hover:before {
+    border-radius: 20px;
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.Signup:after {
+  background-color: #FFFFFF;
+}
+
+.Signup span {
+  z-index: 1;
+  position: relative;
+}
+
+
+
+.btn:hover{
+color: black;
+}
+
+h1{
+
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 550px;
+    color: rgb(5, 5, 5);
+    text-align: center;
+}
+
+.photo{
+background-position: center;
+background-size:cover ;
+width: 100%;
+height: auto;
+position: absolute;
+top: 11%;
+}
+
+.a_sign{
+    color: #000000;
+}
+
+.a_sign:hover{
+    color: #000000;
+}
+
+.active{
+    background-color: #baa419;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    margin-left: 600px;
+    text-align: center;
+    padding-top: 10px;
+   
+}
+
+.active:hover{
+    color: #000000;
+}
+
+.footer{
+    height: 85px;
+    width: 100%;
+    background-color: rgba(27, 27, 27, 0.817);
+    color: rgba(255, 255, 255, 0.553);
+position: absolute;
+top: 90%;
+}
+
+
+.copy{
+position: absolute;
+top:30%;
+right: 75%;
+}
+
+.social{
+
+   position: absolute;
+   right: 10%;
+   display: inline;
+   color: #ffffff9b;
+}
+
+
+p{
+    position: relative;
+margin-top: 8px;
+}
+
+
+.loading-container {
+    width: 100%;
+    text-align: center;
+    color: #c58e16;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; /* Example background color */
+  }
+  
+  .loading-container:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    animation: movingLine 2s infinite ease-in-out;
+  }
+  
+  @keyframes movingLine {
+    0% {
+      opacity: 0;
+      width: 0;
+    }
+    33.3%, 66% {
+      opacity: 0.8;
+      width: 100%;
+    }
+    85% {
+      width: 0;
+      left: initial;
+      right: 0;
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      width: 0;
+    }
+  }
+  
+  .loading-text {
+    font-size: 5vw;
+    line-height: 24px;
+    letter-spacing: 10px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .loading-text span {
+    animation: moveLetters 2.4s infinite ease-in-out;
+    transform: translateX(0);
+    position: relative;
+    display: inline-block;
+    opacity: 0;
+    text-shadow: 0px 2px 10px rgba(46, 74, 81, 0.3);
+  }
+  
+  @for $i from 1 through 7 {
+    .loading-text span:nth-child(#{$i}) {
+      animation-delay: $i * 0.1s;
+    }
+  }
+  
+  @keyframes moveLetters {
+    0% {
+      transform: translateX(-15vw);
+      opacity: 0;
+    }
+    33.3%, 66% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(15vw);
+      opacity: 0;
+    }
+  }
+  
+  .socials {
+    position: absolute;
+    bottom: 23%;
+    align-items: center;
+  }
+  
+  .social-link {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 12px;
+  }
+  
+
+  i{
+    margin-left: 10px;
+  }
+
+  #linkedin{
+    margin-left: 16px;
+  }
+
+ 
+
+.welcome {
+  position: absolute;
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+  font-size: 30px;
+  font-weight: 600;
+  right: 55%;
+}
+
+.welcome:first-of-type {    
+  animation: showup 9s infinite;
+}
+
+.welcome:last-of-type {
+  width:0px;
+  animation: reveal 9s infinite;
+}
+
+.welcome1 {
+  position: absolute;
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+  font-size: 30px;
+  font-weight: 600;
+  left: 45.2%;
+}
+
+.welcome1:first-of-type {    
+  animation: showup 9s infinite;
+}
+
+.welcome1:last-of-type {
+  width:0px;
+  animation: reveal 9s infinite;
+}
+
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:555px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:355px;}
+}
+
+
+
+
